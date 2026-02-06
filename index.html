@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Centro Cultural Desafíos</title>
+    <!-- Conexión al archivo CSS -->
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/imagen/logo desafios.png" width="110" height="80" />
+
+        <div>
+          <h1>Centro Cultural Desafíos</h1>
+          <p class="lead">Danza · Canto · Teatro · Teatro Musical · ¡Para todos!</p>
+        </div>
+      </div>
+      <div style="text-align: right"></div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>¿Para qué edad estás buscando actividad?</h2>
+        <p class="small">
+          Elige la categoría según la edad y verás las actividades y grupos disponibles.
+        </p>
+        <div class="selector" id="ageSelector">
+          <button class="group-btn active" data-group="babies">
+            Babies (3-5 años)
+          </button>
+          <button class="group-btn" data-group="ninos">Niños (6-9 años)</button>
+          <button class="group-btn" data-group="junior">
+            Junior (10-13 años) 
+          </button>
+          <button class="group-btn" data-group="jovenes">
+            Jóvenes (14-21 años)
+          </button>
+          <button class="group-btn" data-group="adultos">Adultos (21+)</button>
+        </div>
+      </section>
+
+      <div class="content">
+        <div>
+          <section class="card">
+            <h2 id="sectionTitle">Babies (3-5 años)</h2>
+            <p class="small">
+             
+            <div class="groups-list" id="groupsList"></div>
+          </section>
+        </div>
+          <div class="card" style="margin-top: 0.75rem">
+            <h4>¡IMPORTANTE!</h4>
+            <a class="small">
+              Los horarios publicados son solo a modo informativo, no confirman vacantes disponibles. Para más información acercate a Desafíos para que te brindemos una atención personalizada. 
+            </a>
+          </div>
+          <br>
+          <a
+            class="cta instagram"
+            href="https://www.instagram.com/desafiosnqn/"
+            target="_blank"
+            >Ver Instagram</a
+          ></br>
+
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      © Centro Cultural Desafíos — Síguenos en
+      <a href="https://www.instagram.com/desafiosnqn/" target="_blank"
+        >@desafiosnqn</a
+      >
+    </footer>
+
+   
+    <script src="script.js"></script>
+  </body>
+</html>
