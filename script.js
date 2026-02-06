@@ -38,7 +38,7 @@ const data = {
   jovenes: [
     {
       id: "Canto",
-      info: "Lunes 19:00hs \n Martes 18:00hs \n Martes 20:00hs \n Miércoles 18:00hs \n Jueves 18:00hs \n Jueves 20:00hs",
+      info: "Lunes 19:00hs <br> Martes 18:00hs \n Martes 20:00hs \n Miércoles 18:00hs \n Jueves 18:00hs - Jueves 20:00hs",
     },
     {
       id: "Baile",
