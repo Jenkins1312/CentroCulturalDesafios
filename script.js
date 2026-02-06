@@ -94,7 +94,7 @@ function renderGroup(groupKey) {
 
     div.addEventListener("click", () => {
       alert(
-        `${item.id}\\n${item.info}\\n\\nPara más info, escribinos por Instagram: @desafiosnqn`
+        `${item.id}\n${item.info}\n\nPara más info, escribinos por Instagram: @desafiosnqn`
       );
     });
     groupsList.appendChild(div);
