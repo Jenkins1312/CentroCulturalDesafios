@@ -138,6 +138,7 @@ main {
 .small {
   font-size: 0.88rem;
   opacity: 0.9;
+  white-space: pre-line;
 }
 
 .highlight {
