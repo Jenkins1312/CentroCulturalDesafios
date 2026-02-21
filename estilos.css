@@ -196,3 +196,15 @@ footer {
     transform: scale(1);
   }
 }
+.group-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.group-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+}
