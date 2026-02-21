@@ -45,7 +45,7 @@ const data = {
     },
     {
       id: "Baile",
-      info: "Martes 19:00hs HIP HOP Coreográfico - Martes 20:00hs ENTRENAMIENTO FISICO PARA BAILARINES - Miércoles 20:00hs AFRO - Jueves 19:00hs POP coreografico - Jueves 20:00hs AVANZADOS",
+      info: "Martes 19:00hs HIP HOP Coreográfico - Martes 20:00hs ENTRENAMIENTO COREOGRAFICO PARA BAILARINES - Miércoles 20:00hs FUSION COREOGRAFICA - Jueves 19:00hs POP coreografico - Jueves 20:00hs AVANZADOS",
     },
     {
       id: "Teatro",
