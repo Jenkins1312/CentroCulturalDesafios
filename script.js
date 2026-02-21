@@ -38,7 +38,7 @@ function renderGroup(groupKey) {
     junior: [
       { nombre: "Micaela Palma (Baile)", img: "imagen/MICA.jpeg" },
       { nombre: "Belén Martínez (Canto)", img: "imagen/BELEN.jpeg" },
-      { nombre: "Leonardo Braun (Teatro)", img: "imagen/Leo.jpeg" },
+      { nombre: "Leonel Brown (Teatro)", img: "imagen/Leo.jpeg" },
     ],
     jovenes: [
       { nombre: "Evelyn Jenkins (Canto)", img: "imagen/MAMA.jpeg" },
