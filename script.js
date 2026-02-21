@@ -18,7 +18,10 @@ const data = {
       id: "Niños 3",
       info: "Miércoles — Teatro 18:00 / Baile 19:00 / Canto 20:00",
     },
-    { id: "Niños 4", info: "Lunes — Teatro 18:00 / Baile 19:00 / Canto 20:00" },
+    {
+      id: "Niños 4",
+      info: "Lunes — Teatro 18:00 / Baile 19:00 / Canto 20:00",
+    },
     {
       id: "Niños 5",
       info: "Lunes — Teatro 19:00; Miércoles — Canto 19:00 / Baile 20:00",
@@ -44,7 +47,6 @@ const data = {
       id: "Baile",
       info: "Martes 19:00hs HIP HOP Coreográfico - Martes 20:00hs ENTRENAMIENTO FISICO PARA BAILARINES - Miércoles 20:00hs AFRO - Jueves 19:00hs POP coreografico - Jueves 20:00hs AVANZADOS",
     },
-
     {
       id: "Teatro",
       info: "Martes 18:00hs PRINCIPIANTES - Jueves 17:30 a 19:00hs AVANZADOS",
@@ -55,7 +57,6 @@ const data = {
       id: "Canto",
       info: "Lunes 18:00hs — Lunes 20:00hs - Martes 19:00hs - Miércoles 19:00hs - Miércoles 20:00hs - Jueves 20:00hs - Viernes 17:00hs - Viernes 18:30hs",
     },
-
     { id: "Teatro Musical Adultos", info: "Viernes 19:30 a 21:00hs" },
   ],
 };
@@ -72,35 +73,55 @@ function renderGroup(groupKey) {
     jovenes: "Jóvenes (14-20 años)",
     adultos: "Adultos (21+)",
   };
+
   sectionTitle.textContent = titles[groupKey];
   groupsList.innerHTML = "";
+
   const items = data[groupKey] || [];
-  items.forEach((item) => {
-    const div = document.createElement("div");
-    div.className = "group-item pulse";
-    div.innerHTML = `
-    <div class="group-main">
-      <div>
+
+  // ===== Acordeón 1: GRUPOS =====
+  const gruposHTML = items
+    .map(
+      (item) => `
+      <div class="group-item pulse">
         <strong>${item.id}</strong>
         <div class="small">${item.info}</div>
       </div>
-      <span class="accordion-icon">+</span>
-    </div>
-  
-    <div class="accordion-content">
-      <img src="imagen/profe.jpg" alt="Profesor" class="profe-img" />
-    </div>
+    `
+    )
+    .join("");
+
+  // ===== Acordeón 2: PROFES =====
+  const profesHTML = `
+    <div class="profe-card"><img src="imagen/BARBY.jpeg" class="profe-img"><div>Barbara Falcigno</div></div>
+    <div class="profe-card"><img src="imagen/CANDE.jpeg" class="profe-img"><div>Candela Sörenson</div></div>
+    <div class="profe-card"><img src="imagen/EMI.jpeg" class="profe-img"><div>Emiliano Alfaro</div></div>
+    <div class="profe-card"><img src="imagen/Leo.jpeg" class="profe-img"><div>Leonel Brown</div></div>
+    <div class="profe-card"><img src="imagen/MAMA.jpeg" class="profe-img"><div>Evelyn Jenkins</div></div>
+    <div class="profe-card"><img src="imagen/MARIAN.jpeg" class="profe-img"><div>Marian Casarini</div></div>
+    <div class="profe-card"><img src="imagen/MARTINA.jpeg" class="profe-img"><div>Martina Zalasar</div></div>
+    <div class="profe-card"><img src="imagen/MICA.jpeg" class="profe-img"><div>Micaela Palma</div></div>
   `;
 
-    div.addEventListener("click", () => {
-      alert(
-        `${item.id}\n${item.info}\n\nPara más info, escribinos por Instagram: @desafiosnqn`
-      );
-    });
-    groupsList.appendChild(div);
-  });
+  groupsList.innerHTML = `
+    <details class="accordion">
+      <summary>GRUPOS Y HORARIOS</summary>
+      <div class="accordion-content">
+        ${gruposHTML}
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary>PROFES</summary>
+      <div class="accordion-content profes-grid">
+        ${profesHTML}
+      </div>
+    </details>
+  `;
 }
+
 renderGroup("babies");
+
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
     buttons.forEach((b) => b.classList.remove("active"));
@@ -108,7 +129,3 @@ buttons.forEach((btn) => {
     renderGroup(btn.dataset.group);
   });
 });
-div.addEventListener("click", () => {
-  div.classList.toggle("open");
-});
-div.innerHTML = `<div><strong>${item.id}</strong><div class=\"small\">${item.info}</div></div>`;
