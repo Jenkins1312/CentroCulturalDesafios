@@ -196,3 +196,48 @@ footer {
     transform: scale(1);
   }
 }
+.accordion {
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.accordion summary {
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  color: #6b3b8c;
+  list-style: none;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion summary::after {
+  content: "  +";
+  font-weight: bold;
+}
+
+details[open] summary::after {
+  content: "  −";
+}
+
+.accordion-content {
+  margin-top: 0.8rem;
+}
+
+.group-line {
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #eee;
+}
+.profe-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 10px;
+}
