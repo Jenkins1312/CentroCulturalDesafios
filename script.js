@@ -64,31 +64,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const profesPorGrupo = {
     babies: [
-      { nombre: "Candela Sörenson", img: "imagen/CANDE.jpeg" },
-      { nombre: "Emiliano Alfaro", img: "imagen/EMI.jpeg" },
+      { nombre: "Candela Sörenson (Canto)", img: "imagen/CANDE.jpeg" },
+      { nombre: "Emiliano Alfaro (Baile)", img: "imagen/EMI.jpeg" },
     ],
     ninos: [
-      { nombre: "Barbara Falcigno (Canto y Baile)", img: "imagen/BARBY.jpeg" },
-      { nombre: "Emiliano Alfaro", img: "imagen/EMI.jpeg" },
+      { nombre: "Barbara Falcigno (Canto)", img: "imagen/BARBY.jpeg" },
+      { nombre: "Emiliano Alfaro (Baile)", img: "imagen/EMI.jpeg" },
       { nombre: "Marian Casarini (Teatro)", img: "imagen/MARIAN.jpeg" },
     ],
     junior: [
       { nombre: "Micaela Palma (Baile)", img: "imagen/MICA.jpeg" },
       { nombre: "Belén Martínez (Canto)", img: "imagen/BELEN.jpeg" },
-      { nombre: "Leonardo Braun (Teatro)", img: "imagen/Leo.jpeg" },
+      { nombre: "Leonardo Brown (Teatro)", img: "imagen/Leo.jpeg" },
     ],
     jovenes: [
       { nombre: "Evelyn Jenkins (Canto)", img: "imagen/MAMA.jpeg" },
-      {
-        nombre: "Martina Zalasar (Baile Coreográfico y Entrenamiento)",
-        img: "imagen/MARTINA.jpeg",
-      },
-      { nombre: "Emiliano Alfaro (Fusión)", img: "imagen/EMI.jpeg" },
-      { nombre: "Leonel Brown (Teatro)", img: "imagen/Leo.jpeg" },
+      { nombre: "Martina Zalasar (Baile)", img: "imagen/MARTINA.jpeg" },
+      { nombre: "Emiliano Alfaro (Baile)", img: "imagen/EMI.jpeg" },
+      { nombre: "Leonardo Brown (Teatro)", img: "imagen/Leo.jpeg" },
     ],
-    adultos: [
-      { nombre: "Evelyn Jenkins (Canto y Teatro)", img: "imagen/MAMA.jpeg" },
-    ],
+    adultos: [{ nombre: "Evelyn Jenkins (Canto)", img: "imagen/MAMA.jpeg" }],
   };
 
   const titles = {
@@ -150,10 +145,8 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  // Inicial
   renderGroup("babies");
 
-  // Botones
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
       buttons.forEach((b) => b.classList.remove("active"));
