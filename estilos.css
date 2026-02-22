@@ -240,3 +240,18 @@ details[open] summary::after {
   background-color: #fff;
   border-radius: 10px;
 }
+.profe-card {
+  background-color: #b57edc; /* violeta más claro */
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  width: 180px;
+}
+
+.profe-img {
+  width: 160px;
+  height: auto; /* mantiene proporción original */
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 8px auto;
+}
