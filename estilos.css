@@ -1,7 +1,6 @@
 :root {
-  --rosa: #e94d8a; /* rosa del logo */
-  --violeta: #6b3b8c; /* violeta del logo */
-  --verdeagua: #58d1c5; /* verde agua del logo */
+  --violeta: #6b3b8c;
+  --verdeagua: #58d1c5;
   --blanco: #ffffff;
   --texto: #2b2b2b;
   --card-shadow: 0 8px 24px rgba(35, 48, 68, 0.12);
@@ -14,12 +13,7 @@
 
 body {
   margin: 0;
-  background: linear-gradient(
-    180deg,
-    var(--rosa) 0%,
-    var(--violeta) 50%,
-    var(--verdeagua) 100%
-  );
+  background: linear-gradient(180deg, var(--violeta) 0%, var(--verdeagua) 100%);
   color: var(--texto);
 }
 
@@ -29,12 +23,7 @@ header {
   justify-content: space-between;
   gap: 1rem;
   padding: 1.5rem;
-  background: linear-gradient(
-    90deg,
-    var(--rosa),
-    var(--violeta),
-    var(--verdeagua)
-  );
+  background: linear-gradient(90deg, var(--violeta), var(--verdeagua));
   color: var(--blanco);
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
@@ -99,7 +88,7 @@ main {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 .group-btn.active {
-  background: linear-gradient(90deg, var(--rosa), var(--violeta));
+  background: linear-gradient(90deg, var(--violeta), var(--verdeagua));
   color: var(--blanco);
 }
 
@@ -144,8 +133,8 @@ main {
 .highlight {
   background: linear-gradient(
     90deg,
-    rgba(233, 77, 138, 0.08),
-    rgba(107, 59, 140, 0.06)
+    rgba(107, 59, 140, 0.08),
+    rgba(88, 209, 197, 0.08)
   );
   padding: 0.5rem;
   border-radius: 10px;
@@ -164,11 +153,13 @@ main {
   font-weight: 700;
   text-decoration: none;
 }
+
 .cta.contact {
-  background: var(--rosa);
+  background: var(--violeta);
   color: var(--blanco);
   margin-bottom: 0.75rem;
 }
+
 .cta.instagram {
   background: var(--verdeagua);
   color: var(--blanco);
@@ -196,6 +187,7 @@ footer {
     transform: scale(1);
   }
 }
+
 .accordion {
   background: white;
   border-radius: 16px;
@@ -208,7 +200,7 @@ footer {
   font-weight: 700;
   font-size: 1.05rem;
   cursor: pointer;
-  color: #6b3b8c;
+  color: var(--violeta);
   list-style: none;
 }
 
@@ -234,6 +226,7 @@ details[open] summary::after {
   padding-bottom: 0.6rem;
   border-bottom: 1px solid #eee;
 }
+
 .profe-img {
   width: 120px;
   height: 120px;
