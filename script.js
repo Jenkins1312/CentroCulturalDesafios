@@ -64,28 +64,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const profesPorGrupo = {
     babies: [
-      { nombre: "Candela Sörenson", clase: "Canto", img: "imagen/CANDE.jpeg" },
-      { nombre: "Emiliano Alfaro", clase: "Baile", img: "imagen/EMI.jpeg" },
+      { nombre: "Candela Sörenson - Canto", img: "imagen/CANDE.jpeg" },
+      { nombre: "Emiliano Alfaro - Baile", img: "imagen/EMI.jpeg" },
     ],
     ninos: [
-      { nombre: "Barbara Falcigno", clase: "Canto", img: "imagen/BARBY.jpeg" },
-      { nombre: "Emiliano Alfaro", clase: "Baile", img: "imagen/EMI.jpeg" },
-      { nombre: "Marian Casarini", clase: "Teatro", img: "imagen/MARIAN.jpeg" },
+      { nombre: "Barbara Falcigno - Canto", img: "imagen/BARBY.jpeg" },
+      { nombre: "Emiliano Alfaro - Baile", img: "imagen/EMI.jpeg" },
+      { nombre: "Marian Casarini - Teatro", img: "imagen/MARIAN.jpeg" },
     ],
     junior: [
-      { nombre: "Micaela Palma", clase: "Baile", img: "imagen/MICA.jpeg" },
-      { nombre: "Belén Martínez", clase: "Canto", img: "imagen/BELEN.jpeg" },
-      { nombre: "Leonardo Brown", clase: "Teatro", img: "imagen/Leo.jpeg" },
+      { nombre: "Micaela Palma - Baile", img: "imagen/MICA.jpeg" },
+      { nombre: "Belén Martínez - Canto", img: "imagen/BELEN.jpeg" },
+      { nombre: "Leonardo Brown - Teatro", img: "imagen/Leo.jpeg" },
     ],
     jovenes: [
-      { nombre: "Evelyn Jenkins", clase: "Canto", img: "imagen/MAMA.jpeg" },
-      { nombre: "Martina Zalasar", clase: "Baile", img: "imagen/MARTINA.jpeg" },
-      { nombre: "Emiliano Alfaro", clase: "Baile", img: "imagen/EMI.jpeg" },
-      { nombre: "Leonardo Brown", clase: "Teatro", img: "imagen/Leo.jpeg" },
+      { nombre: "Evelyn Jenkins - Canto", img: "imagen/MAMA.jpeg" },
+      { nombre: "Martina Zalasar - Baile", img: "imagen/MARTINA.jpeg" },
+      { nombre: "Emiliano Alfaro - Baile", img: "imagen/EMI.jpeg" },
+      { nombre: "Leonardo Brown - Teatro", img: "imagen/Leo.jpeg" },
     ],
-    adultos: [
-      { nombre: "Evelyn Jenkins", clase: "Canto", img: "imagen/MAMA.jpeg" },
-    ],
+    adultos: [{ nombre: "Evelyn Jenkins - Canto", img: "imagen/MAMA.jpeg" }],
   };
 
   const titles = {

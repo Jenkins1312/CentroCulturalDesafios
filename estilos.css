@@ -250,26 +250,3 @@ details[open] summary::after {
   background-color: #fff;
   border-radius: 10px;
 }
-.profes-grid {
-  display: grid;
-  gap: 1rem;
-}
-
-.profe-card {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 0.6rem;
-  border-radius: 12px;
-}
-
-.profe-card strong {
-  display: block;
-  font-size: 0.95rem;
-}
-
-.profe-card .small {
-  font-size: 0.85rem;
-  opacity: 0.8;
-}
