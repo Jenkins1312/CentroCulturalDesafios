@@ -120,14 +120,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const profesHTML = profes
       .map(
         (profe) => `
-        <div class="profe-card">
-          <img src="${profe.img}" class="profe-img" />
-          <div>
-            <strong>${profe.nombre}</strong><br>
-            <span class="small">${profe.clase}</span>
-          </div>
-        </div>
-      `
+      <div class="profe-card">
+        <img src="${profe.img}" class="profe-img" />
+        <div>${profe.nombre} - ${profe.clase || ""}</div>
+      </div>
+    `
       )
       .join("");
 
