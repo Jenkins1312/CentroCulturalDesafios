@@ -1,9 +1,9 @@
 :root {
-  --violeta: #6b3b8c;
-  --verdeagua: #58d1c5;
+  --violeta: #a678d6; /* violeta clarito */
+  --verdeagua: #5fd6ca;
   --blanco: #ffffff;
   --texto: #2b2b2b;
-  --card-shadow: 0 8px 24px rgba(35, 48, 68, 0.12);
+  --card-shadow: 0 8px 24px rgba(35, 48, 68, 0.1);
   font-family: "Segoe UI", Roboto, Arial;
 }
 
@@ -13,12 +13,7 @@
 
 body {
   margin: 0;
-  background: linear-gradient(
-    180deg,
-    var(--violeta) 0%,
-    var(--violeta) 65%,
-    var(--verdeagua) 100%
-  );
+  background: linear-gradient(180deg, #c7a2ee 0%, #b88ae4 55%, #6edfd4 100%);
   color: var(--texto);
 }
 
@@ -28,12 +23,7 @@ header {
   justify-content: space-between;
   gap: 1rem;
   padding: 1.5rem;
-  background: linear-gradient(
-    90deg,
-    var(--violeta) 0%,
-    var(--violeta) 70%,
-    var(--verdeagua) 100%
-  );
+  background: linear-gradient(90deg, #b88ae4 0%, #c7a2ee 60%, #6edfd4 100%);
   color: var(--blanco);
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
@@ -50,7 +40,7 @@ header {
   width: 56px;
   height: 56px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,7 +126,7 @@ main {
   padding: 0.75rem;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.04);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .small {
@@ -148,8 +138,8 @@ main {
 .highlight {
   background: linear-gradient(
     90deg,
-    rgba(107, 59, 140, 0.08),
-    rgba(88, 209, 197, 0.08)
+    rgba(166, 120, 214, 0.12),
+    rgba(95, 214, 202, 0.12)
   );
   padding: 0.5rem;
   border-radius: 10px;
