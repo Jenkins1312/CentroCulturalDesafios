@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       {
         id: "Baile",
-        info: "Martes 19:00hs HIP HOP Coreográfico - Martes 20:00hs ENTRENAMIENTO COREOGRAFICO PARA BAILARINES - Miércoles 20:00hs FUSION COREOGRAFICA - Jueves 19:00hs POP coreografico - Jueves 20:00hs AVANZADOS",
+        info: "Martes 19:00hs HIP HOP Coreográfico \n Martes 20:00hs ENTRENAMIENTO COREOGRAFICO PARA BAILARINES \n Miércoles 20:00hs FUSION COREOGRAFICA \n Jueves 19:00hs POP coreografico \n Jueves 20:00hs AVANZADOS",
       },
       {
         id: "Teatro",
@@ -64,26 +64,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const profesPorGrupo = {
     babies: [
-      { nombre: "Candela Sörenson, Canto", img: "imagen/CANDE.jpeg" },
-      { nombre: "Emiliano Alfaro, Baile", img: "imagen/EMI.jpeg" },
+      { nombre: "Candela Sörenson", clase: "Canto", img: "imagen/CANDE.jpeg" },
+      { nombre: "Emiliano Alfaro", clase: "Baile", img: "imagen/EMI.jpeg" },
     ],
     ninos: [
-      { nombre: "Barbara Falcigno, Canto", img: "imagen/BARBY.jpeg" },
-      { nombre: "Emiliano Alfaro, Baile", img: "imagen/EMI.jpeg" },
-      { nombre: "Marian Casarini, Teatro", img: "imagen/MARIAN.jpeg" },
+      { nombre: "Barbara Falcigno", clase: "Canto", img: "imagen/BARBY.jpeg" },
+      { nombre: "Emiliano Alfaro", clase: "Baile", img: "imagen/EMI.jpeg" },
+      { nombre: "Marian Casarini", clase: "Teatro", img: "imagen/MARIAN.jpeg" },
     ],
     junior: [
-      { nombre: "Micaela Palma, Baile", img: "imagen/MICA.jpeg" },
-      { nombre: "Belén Martínez, (Canto", img: "imagen/BELEN.jpeg" },
-      { nombre: "Leonardo Brown, Teatro", img: "imagen/Leo.jpeg" },
+      { nombre: "Micaela Palma", clase: "Baile", img: "imagen/MICA.jpeg" },
+      { nombre: "Belén Martínez", clase: "Canto", img: "imagen/BELEN.jpeg" },
+      { nombre: "Leonardo Brown", clase: "Teatro", img: "imagen/Leo.jpeg" },
     ],
     jovenes: [
-      { nombre: "Evelyn Jenkins, Canto", img: "imagen/MAMA.jpeg" },
-      { nombre: "Martina Zalasar, Baile", img: "imagen/MARTINA.jpeg" },
-      { nombre: "Emiliano Alfaro, Baile", img: "imagen/EMI.jpeg" },
-      { nombre: "Leonardo Brown, Teatro", img: "imagen/Leo.jpeg" },
+      { nombre: "Evelyn Jenkins", clase: "Canto", img: "imagen/MAMA.jpeg" },
+      { nombre: "Martina Zalasar", clase: "Baile", img: "imagen/MARTINA.jpeg" },
+      { nombre: "Emiliano Alfaro", clase: "Baile", img: "imagen/EMI.jpeg" },
+      { nombre: "Leonardo Brown", clase: "Teatro", img: "imagen/Leo.jpeg" },
     ],
-    adultos: [{ nombre: "Evelyn Jenkins, Canto", img: "imagen/MAMA.jpeg" }],
+    adultos: [
+      { nombre: "Evelyn Jenkins", clase: "Canto", img: "imagen/MAMA.jpeg" },
+    ],
   };
 
   const titles = {
@@ -122,7 +124,10 @@ document.addEventListener("DOMContentLoaded", () => {
         (profe) => `
         <div class="profe-card">
           <img src="${profe.img}" class="profe-img" />
-          <div>${profe.nombre}</div>
+          <div>
+            <strong>${profe.nombre}</strong><br>
+            <span class="small">${profe.clase}</span>
+          </div>
         </div>
       `
       )
