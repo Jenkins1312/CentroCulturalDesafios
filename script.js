@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     adultos: [
       {
-        nombre: "Evelyn Jenkins - Canto/Teatro Musical",
+        nombre: "Evelyn Jenkins - Canto - Teatro Musical",
         img: "imagen/MAMA.jpeg",
       },
     ],
