@@ -13,7 +13,12 @@
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, var(--violeta) 0%, var(--verdeagua) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--violeta) 0%,
+    var(--violeta) 65%,
+    var(--verdeagua) 100%
+  );
   color: var(--texto);
 }
 
@@ -23,7 +28,12 @@ header {
   justify-content: space-between;
   gap: 1rem;
   padding: 1.5rem;
-  background: linear-gradient(90deg, var(--violeta), var(--verdeagua));
+  background: linear-gradient(
+    90deg,
+    var(--violeta) 0%,
+    var(--violeta) 70%,
+    var(--verdeagua) 100%
+  );
   color: var(--blanco);
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
@@ -52,6 +62,7 @@ h1 {
   margin: 0;
   font-size: 1.25rem;
 }
+
 p.lead {
   margin: 0.25rem 0 0;
   font-size: 0.9rem;
@@ -83,10 +94,12 @@ main {
   color: var(--violeta);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
+
 .group-btn:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
+
 .group-btn.active {
   background: linear-gradient(90deg, var(--violeta), var(--verdeagua));
   color: var(--blanco);
@@ -97,6 +110,7 @@ main {
   grid-template-columns: 1fr 360px;
   gap: 1rem;
 }
+
 @media (max-width: 900px) {
   .content {
     grid-template-columns: 1fr;
@@ -114,6 +128,7 @@ main {
   display: grid;
   gap: 0.75rem;
 }
+
 .group-item {
   display: flex;
   justify-content: space-between;
@@ -176,6 +191,7 @@ footer {
 .pulse {
   animation: pulse 3s infinite;
 }
+
 @keyframes pulse {
   0% {
     transform: scale(1);
