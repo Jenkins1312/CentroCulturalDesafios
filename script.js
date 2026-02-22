@@ -83,7 +83,12 @@ document.addEventListener("DOMContentLoaded", () => {
       { nombre: "Emiliano Alfaro - Baile", img: "imagen/EMI.jpeg" },
       { nombre: "Leonardo Brown - Teatro", img: "imagen/Leo.jpeg" },
     ],
-    adultos: [{ nombre: "Evelyn Jenkins - Canto", img: "imagen/MAMA.jpeg" }],
+    adultos: [
+      {
+        nombre: "Evelyn Jenkins - Canto/Teatro Musical",
+        img: "imagen/MAMA.jpeg",
+      },
+    ],
   };
 
   const titles = {
