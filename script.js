@@ -9,35 +9,35 @@ document.addEventListener("DOMContentLoaded", () => {
     ninos: [
       {
         id: "Niños 1",
-        info: "Lunes — Canto 19:00hs; Miércoles — Teatro 18:00 / Baile 19:00",
+        info: " Lunes — Canto 19:00hs; Miércoles — Teatro 18:00 / Baile 19:00",
       },
       {
         id: "Niños 2",
-        info: "Lunes — Teatro 18:00 / Baile 19:00; Miércoles — Canto 19:00",
+        info: " Lunes — Teatro 18:00 / Baile 19:00; Miércoles — Canto 19:00",
       },
       {
         id: "Niños 3",
-        info: "Miércoles — Teatro 18:00 / Baile 19:00 / Canto 20:00",
+        info: " Miércoles — Teatro 18:00 / Baile 19:00 / Canto 20:00",
       },
       {
         id: "Niños 4",
-        info: "Lunes — Teatro 18:00 / Baile 19:00 / Canto 20:00",
+        info: " Lunes — Teatro 18:00 / Baile 19:00 / Canto 20:00",
       },
       {
         id: "Niños 5",
-        info: "Lunes — Teatro 19:00; Miércoles — Canto 19:00 / Baile 20:00",
+        info: " Lunes — Teatro 19:00; Miércoles — Canto 19:00 / Baile 20:00",
       },
     ],
     junior: [
       {
         id: "Canto",
-        info: "Martes 18:00hs - Martes 19:00hs - Martes 20:00hs  Jueves 18:00hs - Jueves 19:00hs - Jueves 20:00hs",
+        info: "Martes 18:00hs<br>Martes 19:00hs<br>Martes 20:00hs<br>Jueves 18:00hs<br>Jueves 19:00hs<br>Jueves 20:00hs",
       },
       {
         id: "Baile",
-        info: "Martes 18:00hs PRINCIPIANTES - Jueves 18:00hs AVANZADOS",
+        info: "Martes 18:00hs PRINCIPIANTES<br>Jueves 18:00hs AVANZADOS",
       },
-      { id: "Teatro", info: "Martes 19:00hs y Martes 20:00hs" },
+      { id: "Teatro", info: "Martes 19:00hs<br>Martes 20:00hs" },
     ],
     jovenes: [
       {

@@ -255,3 +255,12 @@ details[open] summary::after {
   display: block;
   margin: 0 auto 8px auto;
 }
+.horario-item {
+  margin-bottom: 4px;
+}
+
+.small {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
