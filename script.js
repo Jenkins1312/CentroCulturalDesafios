@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
     adultos: [
       {
         id: "Canto",
-        info: "Lunes 18:00hs — Lunes 20:00hs - Martes 19:00hs - Miércoles 19:00hs - Miércoles 20:00hs - Jueves 20:00hs - Viernes 17:00hs - Viernes 18:30hs",
+        info: "Lunes 18:00hs — Lunes 20:00hs - Martes 19:00hs - Miércoles 19:00hs - Miércoles 20:00hs - Jueves 20:00hs - Viernes 19:30hs - Viernes 20:30hs",
       },
-      { id: "Teatro Musical Adultos", info: "Viernes 19:30 a 21:00hs" },
+      { id: "Teatro Musical Adultos", info: "Viernes 18:30 a 19:30hs" },
     ],
   };
 
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     adultos: [
       {
-        nombre: "Evelyn Jenkins - Canto - Teatro Musical",
+        nombre: "Evelyn Jenkins",
         img: "imagen/MAMA.jpeg",
       },
     ],
@@ -125,11 +125,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const profesHTML = profes
       .map(
         (profe) => `
-      <div class="profe-card">
-        <img src="${profe.img}" class="profe-img" />
-        <div>${profe.nombre} - ${profe.clase}</div>
-      </div>
-    `
+        <div class="profe-card">
+          <img src="${profe.img}" class="profe-img" />
+          <div>
+            ${
+              groupKey === "adultos"
+                ? profe.nombre.split(" - ")[0]
+                : profe.nombre
+            }
+          </div>
+        </div>
+      `
       )
       .join("");
 
