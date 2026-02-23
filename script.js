@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       {
         id: "Baile",
-        info: "Martes 19:00hs HIP HOP Coreográfico \n Martes 20:00hs ENTRENAMIENTO COREOGRAFICO PARA BAILARINES \n Miércoles 20:00hs FUSION COREOGRAFICA \n Jueves 19:00hs POP coreografico \n Jueves 20:00hs AVANZADOS",
+        info: "Martes 20:00hs ENTRENAMIENTO COREOGRAFICO PARA BAILARINES \n Miércoles 20:00hs FUSION COREOGRAFICA \n Jueves 19:00hs POP coreografico \n Jueves 20:00hs AVANZADOS",
       },
       {
         id: "Teatro",
