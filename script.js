@@ -8,24 +8,24 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     ninos: [
       {
-        id: "Niños 1",
-        info: " Lunes — Canto 19:00hs; Miércoles — Teatro 18:00 / Baile 19:00",
+        id: "Niños 1  ",
+        info: "  Lunes — Canto 19:00hs; Miércoles — Teatro 18:00 / Baile 19:00",
       },
       {
-        id: "Niños 2",
-        info: " Lunes — Teatro 18:00 / Baile 19:00; Miércoles — Canto 19:00",
+        id: "Niños 2  ",
+        info: "  Lunes — Teatro 18:00 / Baile 19:00; Miércoles — Canto 19:00",
       },
       {
-        id: "Niños 3",
-        info: " Miércoles — Teatro 18:00 / Baile 19:00 / Canto 20:00",
+        id: "Niños 3  ",
+        info: "   Miércoles — Teatro 18:00 / Baile 19:00 / Canto 20:00",
       },
       {
-        id: "Niños 4",
-        info: " Lunes — Teatro 18:00 / Baile 19:00 / Canto 20:00",
+        id: "Niños 4  ",
+        info: "   Lunes — Teatro 18:00 / Baile 19:00 / Canto 20:00",
       },
       {
-        id: "Niños 5",
-        info: " Lunes — Teatro 19:00; Miércoles — Canto 19:00 / Baile 20:00",
+        id: "Niños 5  ",
+        info: "   Lunes — Teatro 19:00; Miércoles — Canto 19:00 / Baile 20:00",
       },
     ],
     junior: [
