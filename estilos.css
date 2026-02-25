@@ -133,6 +133,7 @@ main {
   font-size: 0.88rem;
   opacity: 0.9;
   white-space: pre-line;
+  margin: 10%;
 }
 
 .highlight {
@@ -263,4 +264,5 @@ details[open] summary::after {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin: 10%;
 }
