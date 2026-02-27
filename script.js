@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     junior: [
       {
         id: "Canto",
-        info: "Martes 18:00hs<br>Martes 19:00hs<br>Martes 20:00hs<br>Jueves 18:00hs<br>Jueves 19:00hs<br>Jueves 20:00hs",
+        info: "Martes 18:00hs - Martes 19:00hs - Martes 20:00hs<br>Jueves 18:00hs - Jueves 19:00hs - Jueves 20:00hs",
       },
       {
         id: "Baile",
