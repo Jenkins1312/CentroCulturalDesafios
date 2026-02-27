@@ -37,26 +37,26 @@ document.addEventListener("DOMContentLoaded", () => {
         id: "Baile",
         info: "Martes 18:00hs PRINCIPIANTES<br>Jueves 18:00hs AVANZADOS",
       },
-      { id: "Teatro", info: "Martes 19:00hs<br>Martes 20:00hs" },
+      { id: "Teatro", info: "Martes 19:00hs<br>Jueves 19:00hs" },
     ],
     jovenes: [
       {
         id: "Canto",
-        info: "Lunes 19:00hs \n Martes 18:00hs \n Martes 20:00hs \n Miércoles 18:00hs \n Jueves 18:00hs - Jueves 20:00hs",
+        info: "Lunes 19:00hs <br> Martes 18:00hs - Martes 20:00hs <br> Miércoles 18:00hs <br> Jueves 18:00hs - Jueves 20:00hs",
       },
       {
         id: "Baile",
-        info: "Martes 20:00hs ENTRENAMIENTO COREOGRAFICO PARA BAILARINES \n Miércoles 20:00hs FUSION COREOGRAFICA \n Jueves 19:00hs POP coreografico \n Jueves 20:00hs AVANZADOS",
+        info: "Martes 20:00hs ENTRENAMIENTO COREOGRAFICO PARA BAILARINES <br> Miércoles 20:00hs FUSION COREOGRAFICA <br> Jueves 19:00hs POP coreografico <br> Jueves 20:00hs AVANZADOS",
       },
       {
         id: "Teatro",
-        info: "Martes 18:00hs PRINCIPIANTES - Jueves 17:30 a 19:00hs AVANZADOS",
+        info: "Martes 18:00hs PRINCIPIANTES <br> Jueves 17:30 a 19:00hs AVANZADOS",
       },
     ],
     adultos: [
       {
         id: "Canto",
-        info: "Lunes 18:00hs — Lunes 20:00hs - Martes 19:00hs - Miércoles 19:00hs - Miércoles 20:00hs - Jueves 20:00hs - Viernes 19:30hs - Viernes 20:30hs",
+        info: "Lunes 18:00hs — Lunes 20:00hs<br>Martes 19:00hs <br> Miércoles 19:00hs - Miércoles 20:00hs <br> Jueves 20:00hs <br> Viernes 19:30hs - Viernes 20:30hs",
       },
       { id: "Teatro Musical Adultos", info: "Viernes 18:30 a 19:30hs" },
     ],
