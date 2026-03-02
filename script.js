@@ -3,17 +3,20 @@ document.addEventListener("DOMContentLoaded", () => {
     babies: [
       { id: "Babies 1", info: "Lunes — Canto 18:00hs / Baile 18:30hs" },
       { id: "Babies 2", info: "Lunes — Baile 18:00hs / Canto 18:30hs" },
-      { id: "Babies 3", info: "Miércoles — Canto 18:00hs / Baile 18:30hs" },
+      {
+        id: "Babies 3",
+        info: "Miércoles — Canto 18:00hs / Baile 18:30hs<strong> SIN CUPOS</strong> ",
+      },
       { id: "Babies 4", info: "Miércoles — Baile 18:00hs / Canto 18:30hs" },
     ],
     ninos: [
       {
         id: "Niños 1",
-        info: "Lunes — Canto 19:00hs<br>Miércoles — Teatro 18:00<br>Baile 19:00",
+        info: "Lunes — Canto 19:00hs<br>Miércoles — Teatro 18:00<br>Baile 19:00<strong> SIN CUPOS DE CANTO</strong>",
       },
       {
         id: "Niños 2",
-        info: "Lunes — Teatro 18:00<br>Baile 19:00<br>Miércoles — Canto 19:00",
+        info: "Lunes — Teatro 18:00<br>Baile 19:00<br>Miércoles — Canto 19:00<strong> SIN CUPOS</strong>",
       },
       {
         id: "Niños 3",
@@ -21,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       {
         id: "Niños 4",
-        info: "Lunes — Teatro 18:00<br>Baile 19:00<br>Canto 20:00",
+        info: "Lunes — Teatro 18:00<br>Baile 19:00<br>Canto 20:00<strong> SIN CUPOS</strong>",
       },
       {
         id: "Niños 5",
@@ -31,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     junior: [
       {
         id: "Canto",
-        info: "Martes 18:00hs - Martes 19:00hs - Martes 20:00hs<br>Jueves 18:00hs - Jueves 19:00hs - Jueves 20:00hs",
+        info: "Martes 18:00hs - Martes 19:00hs - Martes 20:00hs<br>Jueves 18:00hs - Jueves 19:00hs Jueves 20:00hs<strong> SIN CUPOS 19:00HS</strong> ",
       },
       {
         id: "Baile",
@@ -42,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     jovenes: [
       {
         id: "Canto",
-        info: "Lunes 19:00hs <br> Martes 18:00hs - Martes 20:00hs <br> Miércoles 18:00hs <br> Jueves 18:00hs - Jueves 20:00hs",
+        info: "Lunes 19:00hs <br> Martes 18:00hs - Martes 20:00hs <br> Miércoles 18:00hs <br> Jueves 18:00hs - Jueves 20:00hs<strong> SOLO CUPOS LUNES 19:00HS Y JUEVES 20:00HS</strong> ",
       },
       {
         id: "Baile",
@@ -56,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     adultos: [
       {
         id: "Canto",
-        info: "Lunes 18:00hs — Lunes 20:00hs<br>Martes 19:00hs <br> Miércoles 19:00hs - Miércoles 20:00hs <br> Jueves 20:00hs <br> Viernes 19:30hs - Viernes 20:30hs",
+        info: "Lunes 18:00hs — Lunes 20:00hs<br>Martes 19:00hs <br> Miércoles 19:00hs - Miércoles 20:00hs <br> Jueves 20:00hs <br> Viernes 19:30hs - Viernes 20:30hs<strong> SOLO CUPOS MARTES 18:00HS</strong> ",
       },
       { id: "Teatro Musical Adultos", info: "Viernes 18:30 a 19:30hs" },
     ],
@@ -112,11 +115,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const gruposHTML = items
       .map(
         (item) => `
-        <div class="group-item pulse">
-          <strong>${item.id}</strong>
-          <div class="small">${item.info}</div>
-        </div>
-      `
+          <div class="group-item pulse">
+            <strong>${item.id}</strong>
+            <div class="small">${item.info}</div>
+          </div>
+        `
       )
       .join("");
 
@@ -125,35 +128,35 @@ document.addEventListener("DOMContentLoaded", () => {
     const profesHTML = profes
       .map(
         (profe) => `
-        <div class="profe-card">
-          <img src="${profe.img}" class="profe-img" />
-          <div>
-            ${
-              groupKey === "adultos"
-                ? profe.nombre.split(" - ")[0]
-                : profe.nombre
-            }
+          <div class="profe-card">
+            <img src="${profe.img}" class="profe-img" />
+            <div>
+              ${
+                groupKey === "adultos"
+                  ? profe.nombre.split(" - ")[0]
+                  : profe.nombre
+              }
+            </div>
           </div>
-        </div>
-      `
+        `
       )
       .join("");
 
     groupsList.innerHTML = `
-      <details class="accordion">
-        <summary>GRUPOS Y HORARIOS</summary>
-        <div class="accordion-content">
-          ${gruposHTML}
-        </div>
-      </details>
+        <details class="accordion">
+          <summary>GRUPOS Y HORARIOS</summary>
+          <div class="accordion-content">
+            ${gruposHTML}
+          </div>
+        </details>
 
-      <details class="accordion">
-        <summary>PROFES</summary>
-        <div class="accordion-content profes-grid">
-          ${profesHTML}
-        </div>
-      </details>
-    `;
+        <details class="accordion">
+          <summary>PROFES</summary>
+          <div class="accordion-content profes-grid">
+            ${profesHTML}
+          </div>
+        </details>
+      `;
   }
 
   renderGroup("babies");
