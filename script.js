@@ -1,13 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const data = {
     babies: [
-      { id: "Babies 1", info: "Lunes — Canto 18:00hs / Baile 18:30hs" },
+      {
+        id: "Babies 1",
+        info: "Lunes — Canto 18:00hs / Baile 18:30hs<strong> SIN CUPOS</strong>",
+      },
       { id: "Babies 2", info: "Lunes — Baile 18:00hs / Canto 18:30hs" },
       {
         id: "Babies 3",
         info: "Miércoles — Canto 18:00hs / Baile 18:30hs<strong> SIN CUPOS</strong> ",
       },
-      { id: "Babies 4", info: "Miércoles — Baile 18:00hs / Canto 18:30hs" },
+      {
+        id: "Babies 4",
+        info: "Miércoles — Baile 18:00hs / Canto 18:30hs<strong> SIN CUPOS</strong>",
+      },
     ],
     ninos: [
       {
@@ -34,13 +40,16 @@ document.addEventListener("DOMContentLoaded", () => {
     junior: [
       {
         id: "Canto",
-        info: "Martes 18:00hs - Martes 19:00hs - Martes 20:00hs<br>Jueves 18:00hs - Jueves 19:00hs Jueves 20:00hs<strong> SIN CUPOS 19:00HS</strong> ",
+        info: "Martes 18:00hs - Martes 19:00hs - Martes 20:00hs<br>Jueves 18:00hs - Jueves 19:00hs Jueves 20:00hs<strong> SOLO CUPOS MARTES 18:00HS, JUEVES 18:00HS Y  MARTES 20:00HS</strong> ",
       },
       {
         id: "Baile",
         info: "Martes 18:00hs PRINCIPIANTES<br>Jueves 18:00hs AVANZADOS",
       },
-      { id: "Teatro", info: "Martes 19:00hs<br>Jueves 19:00hs" },
+      {
+        id: "Teatro",
+        info: "Martes 19:00hs<br>Jueves 19:00hs<strong> SIN CUPOS</strong MARTES 19:00HS>",
+      },
     ],
     jovenes: [
       {
@@ -59,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     adultos: [
       {
         id: "Canto",
-        info: "Lunes 18:00hs — Lunes 20:00hs<br>Martes 19:00hs <br> Miércoles 19:00hs - Miércoles 20:00hs <br> Jueves 20:00hs <br> Viernes 19:30hs - Viernes 20:30hs<strong> SOLO CUPOS MARTES 18:00HS</strong> ",
+        info: "Lunes 18:00hs — Lunes 20:00hs<br>Martes 19:00hs <br> Miércoles 19:00hs - Miércoles 20:00hs <br> Jueves 20:00hs <br> Viernes 19:30hs - Viernes 20:30hs<strong> SOLO CUPOS MARTES 18:00HS, MIERCOLES 20:00HS</strong> ",
       },
       { id: "Teatro Musical Adultos", info: "Viernes 18:30 a 19:30hs" },
     ],
